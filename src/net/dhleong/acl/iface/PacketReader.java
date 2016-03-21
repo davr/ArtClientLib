@@ -34,7 +34,7 @@ public class PacketReader {
 	private PacketFactoryRegistry factoryRegistry;
 	private ListenerRegistry listenerRegistry;
 	private Version version;
-	private ByteArrayReader payload;
+	public ByteArrayReader payload;
 	private SortedMap<String, byte[]> unknownProps;
 	private ObjectType objectType;
 	private int objectId;

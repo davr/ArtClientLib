@@ -55,11 +55,11 @@ public class ObjectUpdatePacket extends BaseArtemisPacket {
 		});
 	}
 
-	private ObjectType objectType;
+	public ObjectType objectType;
 	private ObjectParser parser;
 	private List<ArtemisObject> objects = new LinkedList<ArtemisObject>();
 
-	private ObjectUpdatePacket(PacketReader reader) {
+	public ObjectUpdatePacket(PacketReader reader) {
 		this(ObjectType.fromId(reader.peekByte()));
 
 		if (parser == null) {

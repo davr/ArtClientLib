@@ -28,7 +28,7 @@ import net.dhleong.acl.world.ArtemisObject;
 public class ThreadedArtemisNetworkInterface implements ArtemisNetworkInterface {
     private ConnectionType recvType;
     private ConnectionType sendType;
-    private PacketFactoryRegistry factoryRegistry = new PacketFactoryRegistry();
+    public PacketFactoryRegistry factoryRegistry = new PacketFactoryRegistry();
     private ListenerRegistry mListeners = new ListenerRegistry();
     private ReceiverThread mReceiveThread;
     private SenderThread mSendThread;
